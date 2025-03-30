@@ -93,7 +93,7 @@
                 </div>
             </div>
 
-            <div class="quiz-section">
+            <!-- <div class="quiz-section">
                 <h3>Latihan Soal</h3>
                 
                 <div class="quiz-question">
@@ -131,6 +131,82 @@
                     <button class="navigation-button" id="nextQuestion">Selanjutnya</button>
                 </div>
             </div>
+        </section> -->
+
+        
+        <div class="quiz-section">
+            <h3>Latihan Soal</h3>
+            <div class="question-counter">Soal 1 dari 5</div>
+            
+            <div class="quiz-question active" data-index="0">
+                <p>1. Protokol yang digunakan untuk mentransfer data di World Wide Web adalah?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="true">HTTP (Hypertext Transfer Protocol)</div>
+                    <div class="quiz-option">FTP (File Transfer Protocol)</div>
+                    <div class="quiz-option">SMTP (Simple Mail Transfer Protocol)</div>
+                    <div class="quiz-option">SSH (Secure Shell)</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question" data-index="1">
+                <p>2. Apa fungsi utama dari DNS (Domain Name System)?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">Menyimpan file website</div>
+                    <div class="quiz-option">Mengenkripsi komunikasi internet</div>
+                    <div class="quiz-option" data-correct="true">Menerjemahkan nama domain ke alamat IP</div>
+                    <div class="quiz-option">Mengkompresi data website</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question" data-index="2">
+                <p>3. Apa yang dimaksud dengan web hosting?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">Proses pembuatan website</div>
+                    <div class="quiz-option" data-correct="true">Layanan penyimpanan file website pada server yang terhubung dengan internet</div>
+                    <div class="quiz-option">Proses pencarian website di internet</div>
+                    <div class="quiz-option">Software untuk membuat website</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question" data-index="3">
+                <p>4. Apa kepanjangan dari URL?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">Universal Resource Locator</div>
+                    <div class="quiz-option" data-correct="true">Uniform Resource Locator</div>
+                    <div class="quiz-option">Universal Reference Link</div>
+                    <div class="quiz-option">Uniform Reference Location</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question" data-index="4">
+                <p>5. Apakah yang dimaksud dengan ISP?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">Internet Security Protocol</div>
+                    <div class="quiz-option">Internet System Protocol</div>
+                    <div class="quiz-option" data-correct="true">Internet Service Provider</div>
+                    <div class="quiz-option">Internet Service Platform</div>
+                </div>
+            </div>
+            
+            <div class="quiz-navigation">
+                <button class="navigation-button" id="prevQuestion" disabled>Sebelumnya</button>
+                <button class="navigation-button" id="nextQuestion" disabled>Selanjutnya</button>
+            </div>
+            
+            <div class="score-section" id="scoreSection">
+                <h3>Hasil Quiz</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="scoreBar"></div>
+                </div>
+                <p id="scoreText">Anda menjawab benar <span id="correctCount">0</span> dari 5 soal (<span id="scorePercentage">0%</span>)</p>
+                <div id="feedbackText"></div>
+                <div class="action-buttons">
+                    <button class="action-button" id="retryButton">Coba Lagi</button>
+                    <a href="../index.html" class="action-button" id="nextRoadmapButton">Lanjut ke Materi Berikutnya</a>
+                </div>
+                <div id="loadingMessage" class="loading-message">Mengarahkan ke materi berikutnya...</div>
+            </div>
+        </div>
         </section>
     </main>
     

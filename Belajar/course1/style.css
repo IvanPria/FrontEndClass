@@ -1,3 +1,16 @@
+:root {
+    --primary: #2743FE;
+    --secondary: #E3FE42;
+    --dark: #34495e;
+    --light: #ecf0f1;
+    --warning: #e74c3c;
+    --background: #f1fbff;
+    --correct: #d4edda;
+    --correct-border: #c3e6cb;
+    --incorrect: #f8d7da;
+    --incorrect-border: #f5c6cb;
+}
+
 /* Course Material Styles */
 .course-material {
     display: block;
@@ -64,21 +77,31 @@
     color: var(--dark);
 }
 
+
+
+/* Quiz Section Styles */
 .quiz-section {
     background-color: var(--background);
     padding: 2rem;
     border-radius: 10px;
     margin-top: 3rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .quiz-section h3 {
     color: var(--primary);
     margin-bottom: 1rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .quiz-question {
     margin-bottom: 2rem;
+    display: none;
+}
+
+.quiz-question.active {
+    display: block;
 }
 
 .quiz-options {
@@ -94,14 +117,25 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border: 1px solid #ddd;
 }
 
-.quiz-option:hover {
+.quiz-option:hover:not(.disabled) {
     background-color: var(--light);
 }
 
-.quiz-option.selected {
-    background-color: var(--secondary);
+.quiz-option.correct {
+    background-color: var(--correct);
+    border-color: var(--correct-border);
+}
+
+.quiz-option.incorrect {
+    background-color: var(--incorrect);
+    border-color: var(--incorrect-border);
+}
+
+.quiz-option.disabled {
+    cursor: not-allowed;
 }
 
 .quiz-navigation {
@@ -118,27 +152,102 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-weight: bold;
 }
 
-.navigation-button:hover {
+.navigation-button:hover:not(:disabled) {
     background-color: var(--secondary);
     color: var(--dark);
 }
 
-.back-to-courses {
-    display: inline-block;
-    margin-bottom: 1rem;
+.navigation-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.score-section {
+    display: none;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.score-section h3 {
     color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: var(--light);
+    border-radius: 20px;
+    margin: 20px 0;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 20px;
+    width: 0%;
+    transition: width 1s ease-in-out;
+}
+
+.action-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.action-button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
     text-decoration: none;
-    font-weight: 500;
+    display: inline-block;
 }
 
-.back-to-courses:hover {
-    text-decoration: underline;
+.action-button:hover {
+    background-color: var(--secondary);
+    color: var(--dark);
 }
 
-@media (max-width: 768px) {
-    .video-placeholder {
-        height: 200px;
-    }
+.question-counter {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+#nextRoadmapButton {
+    display: none;
+    font-weight: bold;
+}
+
+#retryButton {
+    display: none;
+    font-weight: bold;
+    background-color: var(--warning);
+}
+
+#retryButton:hover {
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.loading-message {
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--dark);
+    display: none;
 }
