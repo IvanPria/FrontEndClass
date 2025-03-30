@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndClass - Pengenalan Internet</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Front<span>End</span>Class</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="../index.html" class="active">Belajar</a></li>
+                    <li><a href="#">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-material active">
+            <a href="../index.html" class="back-to-courses">← Kembali ke Daftar Kursus</a>
+            <h2>Pengenalan Internet</h2>
+            <div class="topic-list">
+                <h3>Materi yang akan dipelajari:</h3>
+                <ul>
+                    <li>Bagaimana cara kerja internet</li>
+                    <li>Apa itu HTTP</li>
+                    <li>Apa itu Domain Name</li>
+                    <li>Apa itu Hosting</li>
+                    <li>Apa itu DNS</li>
+                    <li>Cara kerja browser</li>
+                </ul>
+            </div>
+
+            <div class="course-material-content">
+                <h3>Bagaimana Cara Kerja Internet</h3>
+                <p>Internet adalah jaringan global komputer yang terhubung menggunakan protokol standar TCP/IP. Ketika Anda mengakses sebuah website, data berpindah melalui berbagai router dan server sebelum mencapai tujuannya.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <p>Video: Penjelasan Cara Kerja Internet</p>
+                    </div>
+                </div>
+                
+                <h3>Apa itu HTTP</h3>
+                <p>HTTP (Hypertext Transfer Protocol) adalah protokol aplikasi untuk sistem informasi terdistribusi, kolaboratif, dan hypermedia. HTTP adalah fondasi komunikasi data untuk World Wide Web, di mana dokumen hypertext termasuk hyperlink ke sumber daya yang dapat diakses pengguna.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <p>Video: Penjelasan HTTP dan HTTPS</p>
+                    </div>
+                </div>
+                
+                <h3>Apa itu Domain Name</h3>
+                <p>Domain name adalah nama yang mudah diingat yang ditetapkan ke alamat IP numerik. Alih-alih mengetik serangkaian angka (IP address), pengguna dapat mengetik nama domain seperti "google.com" untuk mengakses website.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <p>Video: Penjelasan Domain Name</p>
+                    </div>
+                </div>
+                
+                <h3>Apa itu Hosting</h3>
+                <p>Hosting adalah layanan yang memungkinkan organisasi dan individu untuk menyimpan website atau aplikasi web di server dan membuatnya dapat diakses melalui internet. Server hosting menyimpan semua halaman, file, dan database yang membentuk website.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <p>Video: Penjelasan Web Hosting</p>
+                    </div>
+                </div>
+                
+                <h3>Apa itu DNS</h3>
+                <p>DNS (Domain Name System) adalah sistem yang menerjemahkan nama domain ke alamat IP. Ketika Anda mengetik nama domain di browser, DNS server mencari alamat IP yang sesuai dan mengarahkan permintaan Anda ke server tersebut.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <p>Video: Penjelasan DNS</p>
+                    </div>
+                </div>
+                
+                <h3>Cara Kerja Browser</h3>
+                <p>Browser web adalah aplikasi yang mengambil dan menampilkan halaman web. Browser mengirimkan permintaan ke server web, menerima respon (biasanya file HTML, CSS, dan JavaScript), dan menafsirkan file-file tersebut untuk menampilkan halaman web yang interaktif.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <p>Video: Cara Kerja Browser</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-section">
+                <h3>Latihan Soal</h3>
+                
+                <div class="quiz-question">
+                    <p>1. Protokol yang digunakan untuk mentransfer data di World Wide Web adalah?</p>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-correct="true">HTTP (Hypertext Transfer Protocol)</div>
+                        <div class="quiz-option">FTP (File Transfer Protocol)</div>
+                        <div class="quiz-option">SMTP (Simple Mail Transfer Protocol)</div>
+                        <div class="quiz-option">SSH (Secure Shell)</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <p>2. Apa fungsi utama dari DNS (Domain Name System)?</p>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Menyimpan file website</div>
+                        <div class="quiz-option">Mengenkripsi komunikasi internet</div>
+                        <div class="quiz-option" data-correct="true">Menerjemahkan nama domain ke alamat IP</div>
+                        <div class="quiz-option">Mengkompresi data website</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <p>3. Apa yang dimaksud dengan web hosting?</p>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Proses pembuatan website</div>
+                        <div class="quiz-option" data-correct="true">Layanan penyimpanan file website pada server yang terhubung dengan internet</div>
+                        <div class="quiz-option">Proses pencarian website di internet</div>
+                        <div class="quiz-option">Software untuk membuat website</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-navigation">
+                    <button class="navigation-button" id="prevQuestion">Sebelumnya</button>
+                    <button class="navigation-button" id="nextQuestion">Selanjutnya</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>📚 AI Assistant</h3>
+            <span>▲</span>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot-message">Halo! Saya asisten AI untuk membantu pembelajaran Frontend Development Anda. Ada yang bisa saya bantu?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Tanyakan sesuatu...">
+            <button>Kirim</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
