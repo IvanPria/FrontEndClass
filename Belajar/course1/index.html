@@ -6,6 +6,7 @@
     <title>FrontEndClass - Pengenalan Internet</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
     <header>
@@ -28,7 +29,7 @@
             <div class="topic-list">
                 <h3>Materi yang akan dipelajari:</h3>
                 <ul>
-                    <li>Bagaimana cara kerja internet</li>
+                    <a href=""></a><li>Bagaimana cara kerja internet</li>
                     <li>Apa itu HTTP</li>
                     <li>Apa itu Domain Name</li>
                     <li>Apa itu Hosting</li>
@@ -39,47 +40,68 @@
 
             <div class="course-material-content">
                 <h3>Bagaimana Cara Kerja Internet</h3>
-                <p>Internet adalah jaringan global komputer yang terhubung menggunakan protokol standar TCP/IP. Ketika Anda mengakses sebuah website, data berpindah melalui berbagai router dan server sebelum mencapai tujuannya.</p>
+                <p>Internet bekerja melalui jaringan global komputer dan server yang saling terhubung, berkomunikasi melalui protokol standar. Data dipecah menjadi paket-paket dan dirutekan melalui berbagai simpul jaringan menggunakan Protokol Internet (IP). Paket-paket ini berjalan melalui berbagai infrastruktur fisik, termasuk kabel serat optik, satelit, dan jaringan nirkabel. Protokol Kontrol Transmisi (TCP) memastikan pengiriman dan penyusunan ulang paket yang andal di tujuannya. Server Sistem Nama Domain (DNS) menerjemahkan nama situs web yang dapat dibaca manusia menjadi alamat IP. Saat Anda mengakses situs web, perangkat Anda mengirimkan permintaan ke server yang sesuai, yang merespons dengan data yang diminta. Proses ini, yang difasilitasi oleh router, switch, dan peralatan jaringan lainnya, memungkinkan pertukaran informasi yang lancar melintasi jarak yang sangat jauh, yang membentuk tulang punggung komunikasi digital kita.               
+                    </p>
                 
                 <div class="video-container">
                     <div class="video-placeholder">
-                        <p>Video: Penjelasan Cara Kerja Internet</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxcc6ycZ73M?si=pxYYG8nP1RegzfpC" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
                 
                 <h3>Apa itu HTTP</h3>
-                <p>HTTP (Hypertext Transfer Protocol) adalah protokol aplikasi untuk sistem informasi terdistribusi, kolaboratif, dan hypermedia. HTTP adalah fondasi komunikasi data untuk World Wide Web, di mana dokumen hypertext termasuk hyperlink ke sumber daya yang dapat diakses pengguna.</p>
+                <p>HTTP (Hypertext Transfer Protocol) adalah fondasi komunikasi data di World Wide Web. Ini adalah protokol lapisan aplikasi yang menentukan bagaimana pesan diformat dan dikirimkan antara peramban web dan server. HTTP beroperasi pada model permintaan-tanggapan: klien (biasanya peramban web) mengirim permintaan ke server, yang kemudian menanggapi dengan data yang diminta. Protokol ini tidak memiliki status, yang berarti setiap permintaan tidak bergantung pada permintaan sebelumnya. HTTP mendukung berbagai metode (GET, POST, PUT, DELETE, dll.) untuk berbagai jenis interaksi dengan sumber daya. HTTPS adalah versi HTTP yang aman, menggunakan enkripsi untuk melindungi data saat transit. HTTP/2 dan HTTP/3 adalah versi yang lebih baru, yang menawarkan peningkatan kinerja melalui fitur-fitur seperti multiplexing dan kompresi header. Memahami HTTP sangat penting untuk pengembangan web, karena ini mendukung cara aplikasi web berkomunikasi dan berfungsi.</p>
                 
                 <div class="video-container">
                     <div class="video-placeholder">
-                        <p>Video: Penjelasan HTTP dan HTTPS</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kBXQZMmiA4s?si=27MW-wjnK-5EUp97" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
                 
                 <h3>Apa itu Domain Name</h3>
-                <p>Domain name adalah nama yang mudah diingat yang ditetapkan ke alamat IP numerik. Alih-alih mengetik serangkaian angka (IP address), pengguna dapat mengetik nama domain seperti "google.com" untuk mengakses website.</p>
+                <p>Domain name adalah alamat yang dapat dibaca manusia yang digunakan untuk mengidentifikasi dan mengakses situs web di internet. Domain name berfungsi sebagai alternatif yang lebih mudah diingat daripada alamat IP numerik yang digunakan komputer untuk menemukan server web. Domain name terdiri dari dua bagian utama yaitu domain tingkat kedua (biasanya nama situs web atau organisasi) dan domain tingkat atas (seperti .com, .org, atau .net). Nama domain didaftarkan melalui pendaftar domain dan harus unik dalam domain tingkat atas. Nama domain sangat penting untuk pencitraan merek, pemasaran, dan membangun keberadaan daring. Sistem Nama Domain (DNS) menerjemahkan nama domain menjadi alamat IP, yang memungkinkan pengguna mengakses situs web dengan mengetikkan nama yang sudah dikenal daripada rangkaian angka yang rumit. Nama domain dapat disesuaikan, ditransfer, dan diperbarui, yang memainkan peran penting dalam struktur dan aksesibilitas World Wide Web.</p>
                 
                 <div class="video-container">
                     <div class="video-placeholder">
-                        <p>Video: Penjelasan Domain Name</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lMHzpBwPuG8?si=uV72b9r7SbqNmoNQ" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
                 
                 <h3>Apa itu Hosting</h3>
-                <p>Hosting adalah layanan yang memungkinkan organisasi dan individu untuk menyimpan website atau aplikasi web di server dan membuatnya dapat diakses melalui internet. Server hosting menyimpan semua halaman, file, dan database yang membentuk website.</p>
+                <p>Web hosting adalah layanan yang memungkinkan individu dan organisasi untuk membuat situs web mereka dapat diakses di internet. Layanan ini melibatkan penyimpanan berkas situs web di komputer canggih yang disebut server, yang terhubung ke jaringan berkecepatan tinggi. Saat pengguna memasukkan nama domain di browser mereka, web host menyajikan konten situs web tersebut. Layanan hosting berkisar dari shared hosting (di mana beberapa situs web berbagi sumber daya server) hingga dedicated hosting (di mana server secara eksklusif digunakan oleh satu klien). Jenis layanan lainnya termasuk hosting VPS (Virtual Private Server), cloud hosting, dan hosting WordPress terkelola. Web host biasanya menyediakan layanan tambahan seperti hosting email, pendaftaran domain, sertifikat SSL, dan dukungan teknis. Pilihan web hosting memengaruhi kinerja, keamanan, dan skalabilitas situs web, menjadikannya keputusan penting untuk setiap kehadiran online.</p>
                 
                 <div class="video-container">
                     <div class="video-placeholder">
-                        <p>Video: Penjelasan Web Hosting</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AXVZYzw8geg?si=vg4QFjmImCOowQf1" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
                 
                 <h3>Apa itu DNS</h3>
-                <p>DNS (Domain Name System) adalah sistem yang menerjemahkan nama domain ke alamat IP. Ketika Anda mengetik nama domain di browser, DNS server mencari alamat IP yang sesuai dan mengarahkan permintaan Anda ke server tersebut.</p>
+                <p>DNS (Domain Name System) adalah sistem penamaan hierarkis dan terdesentralisasi untuk komputer, layanan, atau sumber daya lain yang terhubung ke Internet atau jaringan pribadi. Sistem ini menerjemahkan nama domain yang dapat dibaca manusia (seperti www.example.com ) menjadi alamat IP (seperti 192.0.2.1) yang digunakan komputer untuk saling mengidentifikasi. Server DNS yang didistribusikan di seluruh dunia bekerja sama untuk menyelesaikan kueri ini, membentuk layanan direktori global. Sistem ini menggunakan struktur seperti pohon dengan server root di bagian atas, diikuti oleh server domain tingkat atas (.com, .org, dll.), server nama otoritatif untuk domain tertentu, dan server DNS lokal. DNS sangat penting untuk berfungsinya Internet, memungkinkan pengguna untuk mengakses situs web dan layanan menggunakan nama yang mudah diingat alih-alih alamat IP numerik.p>
                 
                 <div class="video-container">
                     <div class="video-placeholder">
-                        <p>Video: Penjelasan DNS</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/27r4Bzuj5NQ?si=12peRZyu2NgjTECM" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
                 
@@ -88,51 +110,14 @@
                 
                 <div class="video-container">
                     <div class="video-placeholder">
-                        <p>Video: Cara Kerja Browser</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5rLFYtXHo9s?si=bgMdBry3onjmWVn-" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="quiz-section">
-                <h3>Latihan Soal</h3>
-                
-                <div class="quiz-question">
-                    <p>1. Protokol yang digunakan untuk mentransfer data di World Wide Web adalah?</p>
-                    <div class="quiz-options">
-                        <div class="quiz-option" data-correct="true">HTTP (Hypertext Transfer Protocol)</div>
-                        <div class="quiz-option">FTP (File Transfer Protocol)</div>
-                        <div class="quiz-option">SMTP (Simple Mail Transfer Protocol)</div>
-                        <div class="quiz-option">SSH (Secure Shell)</div>
-                    </div>
-                </div>
-                
-                <div class="quiz-question">
-                    <p>2. Apa fungsi utama dari DNS (Domain Name System)?</p>
-                    <div class="quiz-options">
-                        <div class="quiz-option">Menyimpan file website</div>
-                        <div class="quiz-option">Mengenkripsi komunikasi internet</div>
-                        <div class="quiz-option" data-correct="true">Menerjemahkan nama domain ke alamat IP</div>
-                        <div class="quiz-option">Mengkompresi data website</div>
-                    </div>
-                </div>
-                
-                <div class="quiz-question">
-                    <p>3. Apa yang dimaksud dengan web hosting?</p>
-                    <div class="quiz-options">
-                        <div class="quiz-option">Proses pembuatan website</div>
-                        <div class="quiz-option" data-correct="true">Layanan penyimpanan file website pada server yang terhubung dengan internet</div>
-                        <div class="quiz-option">Proses pencarian website di internet</div>
-                        <div class="quiz-option">Software untuk membuat website</div>
-                    </div>
-                </div>
-                
-                <div class="quiz-navigation">
-                    <button class="navigation-button" id="prevQuestion">Sebelumnya</button>
-                    <button class="navigation-button" id="nextQuestion">Selanjutnya</button>
-                </div>
-            </div>
-        </section> -->
-
         
         <div class="quiz-section">
             <h3>Latihan Soal</h3>

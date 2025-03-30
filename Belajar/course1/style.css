@@ -49,6 +49,7 @@
 
 .course-material-content {
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
 .course-material-content h3 {
@@ -58,7 +59,7 @@
     padding-left: 0.8rem;
 }
 
-.video-container {
+/* .video-container {
     background-color: var(--background);
     padding: 1rem;
     border-radius: 5px;
@@ -75,8 +76,37 @@
     justify-content: center;
     border-radius: 5px;
     color: var(--dark);
+} */
+
+.video-container {
+    background-color: var(--background);
+    max-width: 100%;
+    margin: 1.5rem auto;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
 }
 
+.video-placeholder {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /* Aspek rasio 16:9 */
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video-placeholder img,
+.video-placeholder video,
+.video-placeholder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
 
 
 /* Quiz Section Styles */
