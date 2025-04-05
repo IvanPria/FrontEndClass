@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndClass - HTML Dasar</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Front<span>End</span>Class</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="../index.html" class="active">Belajar</a></li>
+                    <li><a href="#">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-material active">
+            <a href="../index.html" class="back-to-courses"><img src="../img/angle-circle-left.png" alt="kembali" width="40" height="40"></a>
+            <h2>CSS Fundamental</h2>
+
+            <div class="course-material-content">
+                <h3>Apa itu CSS</h3>
+                <p>CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mengatur tampilan dan desain elemen dalam halaman web. CSS memungkinkan pengembang untuk mengontrol warna, font, layout, animasi, dan berbagai aspek tampilan lainnya secara terpisah dari struktur HTML.</p>
+                <br>
+                <p>Fungsi CSS: </p>
+                <div>
+                    <ul>
+                        <li>Mempercantik tampilan website - Mengatur warna, font, ukuran, dan jarak antar elemen.</li>
+                        <li>Membantu responsivitas - Menyesuaikan tampilan agar cocok di berbagai perangkat (desktop, tablet, dan mobile).</li>
+                        <li>Meningkatkan efisiensi kode - Dengan satu file CSS, banyak halaman HTML bisa memiliki gaya yang sama.</li>
+                        <li>Memisahkan struktur dan desain - HTML untuk struktur, CSS untuk tampilan.</li>
+                    </ul>
+                </div><br>
+                <h2></h2>
+
+                <h3>Selektor dan Spesifisitas CSS</h3>
+                <p>Selektor CSS digunakan untuk memilih dan menata elemen HTML, sedangkan spesifisitas menentukan prioritas dari aturan CSS yang berlaku.</p>
+                <br>
+                <div>
+                    <h4>1. Jenis Selektor CSS</h4>
+                    <ul>
+                        <li><code>*</code> → Universal (Memilih semua elemen)</li>
+                        <li><code>element</code> → Selektor Tag (Misal: <code>p</code>, <code>h1</code>)</li>
+                        <li><code>.class</code> → Selektor Kelas (Misal: <code>.container</code>)</li>
+                        <li><code>#id</code> → Selektor ID (Misal: <code>#header</code>)</li>
+                        <li><code>selector1, selector2</code> → Selektor Grup</li>
+                        <li><code>selector1 selector2</code> → Selektor Turunan</li>
+                    </ul>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>2. Contoh Penggunaan Selektor</h4>
+                    <pre>
+                    /* Selektor tag */
+                    p {
+                        color: blue;
+                    }
+                    
+                    /* Selektor kelas */
+                    .highlight {
+                        background-color: yellow;
+                    }
+                    
+                    /* Selektor ID */
+                    #header {
+                        font-size: 24px;
+                    }
+                    
+                    /* Selektor grup */
+                    h1, h2, h3 {
+                        font-family: Arial, sans-serif;
+                    }
+                    
+                    /* Selektor turunan */
+                    div p {
+                        font-style: italic;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>3. Spesifisitas CSS</h4>
+                    <p>Spesifisitas menentukan aturan mana yang lebih kuat dalam konflik aturan CSS. Urutan prioritasnya:</p>
+                    <ul>
+                        <li>Inline Style (Paling kuat) → <code>&lt;p style="color: red;"&gt;</code></li>
+                        <li>ID Selektor → <code>#id</code></li>
+                        <li>Kelas, Pseudo-Kelas, dan Atribut → <code>.class</code>, <code>:hover</code></li>
+                        <li>Elemen dan Pseudo-Element → <code>h1</code>, <code>::before</code></li>
+                    </ul>
+                </div>
+                
+                <br>
+                <h2></h2>
+
+                <h3>Properti dan Nilai CSS</h3>
+                <p>CSS menggunakan berbagai properti untuk mengatur tampilan elemen HTML. Setiap properti memiliki nilai tertentu yang menentukan bagaimana elemen tersebut ditampilkan.</p>
+                <br>
+                <div>
+                    <h4>1. Properti Warna</h4>
+                    <ul>
+                        <li><code>color</code> → Mengatur warna teks.</li>
+                        <li><code>background-color</code> → Mengatur warna latar belakang elemen.</li>
+                    </ul>
+                    <pre>
+                    /* Contoh penggunaan */
+                    p {
+                        color: blue;
+                        background-color: lightgray;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>2. Properti Teks</h4>
+                    <ul>
+                        <li><code>font-size</code> → Mengatur ukuran teks.</li>
+                        <li><code>text-align</code> → Mengatur perataan teks (left, center, right).</li>
+                        <li><code>line-height</code> → Mengatur tinggi baris teks.</li>
+                    </ul>
+                    <pre>
+                    /* Contoh penggunaan */
+                    h1 {
+                        font-size: 24px;
+                        text-align: center;
+                        line-height: 1.5;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>3. Properti Box Model</h4>
+                    <ul>
+                        <li><code>margin</code> → Mengatur jarak luar elemen.</li>
+                        <li><code>padding</code> → Mengatur jarak dalam elemen.</li>
+                        <li><code>border</code> → Menambahkan garis tepi pada elemen.</li>
+                    </ul>
+                    <pre>
+                    /* Contoh penggunaan */
+                    div {
+                        margin: 20px;
+                        padding: 15px;
+                        border: 2px solid black;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>4. Properti Tampilan dan Posisi</h4>
+                    <ul>
+                        <li><code>display</code> → Mengatur bagaimana elemen ditampilkan (block, inline, flex, grid).</li>
+                        <li><code>position</code> → Mengatur posisi elemen (static, relative, absolute, fixed, sticky).</li>
+                    </ul>
+                    <pre>
+                    /* Contoh penggunaan */
+                    .container {
+                        display: flex;
+                        position: relative;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>5. Properti Flexbox</h4>
+                    <ul>
+                        <li><code>display: flex</code> → Mengaktifkan model Flexbox.</li>
+                        <li><code>justify-content</code> → Mengatur perataan horizontal (center, space-between, space-around).</li>
+                        <li><code>align-items</code> → Mengatur perataan vertikal (flex-start, center, flex-end).</li>
+                    </ul>
+                    <pre>
+                    /* Contoh penggunaan */
+                    .flex-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <h2></h2>
+
+                <h3>Layout dan Posisi dalam CSS</h3>
+                <p>CSS menyediakan berbagai properti untuk mengatur tata letak (layout) dan posisi elemen dalam halaman web.</p>
+                <br>
+                <div>
+                    <h4>1. Model Box</h4>
+                    <p>Model box terdiri dari margin, border, padding, dan content.</p>
+                    <pre>
+                    /* Contoh penggunaan */
+                    .box {
+                        width: 200px;
+                        padding: 20px;
+                        border: 2px solid black;
+                        margin: 10px;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>2. Display</h4>
+                    <p>Properti <code>display</code> menentukan bagaimana elemen ditampilkan di dalam dokumen.</p>
+                    <ul>
+                        <li><code>block</code> → Elemen tampil dalam baris penuh.</li>
+                        <li><code>inline</code> → Elemen tampil dalam satu baris.</li>
+                        <li><code>flex</code> → Menggunakan model Flexbox.</li>
+                        <li><code>grid</code> → Menggunakan model Grid.</li>
+                    </ul>
+                    <pre>
+                    /* Contoh penggunaan */
+                    .container {
+                        display: flex;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>3. Posisi Elemen</h4>
+                    <p>Properti <code>position</code> mengontrol cara elemen diposisikan di dalam halaman.</p>
+                    <ul>
+                        <li><code>static</code> → Posisi default.</li>
+                        <li><code>relative</code> → Elemen diposisikan relatif terhadap posisi aslinya.</li>
+                        <li><code>absolute</code> → Elemen diposisikan relatif terhadap elemen induk yang memiliki posisi selain static.</li>
+                        <li><code>fixed</code> → Elemen tetap di tempat meskipun halaman di-scroll.</li>
+                        <li><code>sticky</code> → Elemen mengikuti scroll hingga mencapai batas tertentu.</li>
+                    </ul>
+                    <pre>
+                    /* Contoh penggunaan */
+                    .fixed-box {
+                        position: fixed;
+                        bottom: 10px;
+                        right: 10px;
+                        background-color: red;
+                        color: white;
+                        padding: 10px;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>4. Flexbox</h4>
+                    <p>Flexbox digunakan untuk mengatur layout secara fleksibel.</p>
+                    <ul>
+                        <li><code>justify-content</code> → Mengatur perataan elemen secara horizontal.</li>
+                        <li><code>align-items</code> → Mengatur perataan elemen secara vertikal.</li>
+                    </ul>
+                    <pre>
+                    /* Contoh penggunaan */
+                    .flex-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>5. CSS Grid</h4>
+                    <p>Grid digunakan untuk mengatur layout berbasis kolom dan baris.</p>
+                    <ul>
+                        <li><code>grid-template-columns</code> → Menentukan jumlah kolom.</li>
+                        <li><code>grid-template-rows</code> → Menentukan jumlah baris.</li>
+                        <li><code>gap</code> → Mengatur jarak antara elemen grid.</li>
+                    </ul>
+                    <pre>
+                    /* Contoh penggunaan */
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 10px;
+                    }
+                    </pre>
+                </div><br>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FqmB-Zj2-PA?feature=shared" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <br>
+                <h2></h2>
+
+                <h3>Responsivitas dengan CSS</h3>
+                <p>Responsivitas dalam CSS memungkinkan halaman web menyesuaikan tampilannya berdasarkan ukuran layar atau perangkat yang digunakan.</p>
+                <br>
+                <div>
+                    <h4>1. Media Queries</h4>
+                    <p>Media queries digunakan untuk menerapkan gaya CSS berdasarkan ukuran layar.</p>
+                    <pre>
+                    /* Contoh penggunaan */
+                    @media (max-width: 600px) {
+                        body {
+                            background-color: lightblue;
+                        }
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>2. Unit Relatif</h4>
+                    <p>Menggunakan unit relatif seperti <code>%, em, rem, vw, vh</code> untuk memastikan elemen berskala sesuai.</p>
+                    <pre>
+                    /* Contoh penggunaan */
+                    .container {
+                        width: 80%;
+                        font-size: 1.2rem;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>3. Flexbox untuk Layout Responsif</h4>
+                    <p>Flexbox membantu dalam menyusun elemen dengan fleksibel.</p>
+                    <pre>
+                    /* Contoh penggunaan */
+                    .flex-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>4. CSS Grid untuk Tata Letak Dinamis</h4>
+                    <p>Grid memungkinkan tata letak berbasis baris dan kolom yang lebih fleksibel.</p>
+                    <pre>
+                    /* Contoh penggunaan */
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        gap: 10px;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>5. Gambar dan Video Responsif</h4>
+                    <p>Menggunakan properti <code>max-width</code> dan <code>height: auto</code> agar gambar dan video berskala otomatis.</p>
+                    <pre>
+                    /* Contoh penggunaan */
+                    img, video {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/srvUrASNj0s?feature=shared" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <br>
+                <h2></h2>
+
+
+                <h3>Animasi dan Transisi CSS</h3>
+                <p>Animasi dan transisi dalam CSS memungkinkan elemen berubah secara halus dari satu gaya ke gaya lainnya.</p>
+                <br>
+                <div>
+                    <h4>1. Transisi CSS</h4>
+                    <p>Transisi memungkinkan perubahan gaya terjadi secara bertahap dalam rentang waktu tertentu.</p>
+                    <pre>
+                        /* Contoh penggunaan */
+                        .btn {
+                            background-color: blue;
+                            color: white;
+                            padding: 10px 20px;
+                            transition: background-color 0.3s ease;
+                        }
+                        .btn:hover {
+                            background-color: red;
+                        }
+                    </pre>
+                </div>
+                
+                <br>
+                <div>
+                    <h4>2. Animasi CSS</h4>
+                    <p>Animasi memungkinkan elemen berubah secara bertahap menggunakan keyframes.</p>
+                    <pre>
+                        /* Contoh penggunaan */
+                        @keyframes slideIn {
+                            from {
+                                transform: translateX(-100%);
+                                opacity: 0;
+                            }
+                            to {
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                        }
+                    .box {
+                        width: 100px;
+                        height: 100px;
+                        background-color: green;
+                        animation: slideIn 1s ease-out;
+                    }
+                </pre>
+            </div>
+                
+            <br>
+
+                <div>
+                    <h4>3. Transformasi CSS</h4>
+                    <p>Transformasi memungkinkan elemen diputar, diperbesar, atau dipindahkan.</p>
+                    <pre>
+                        /* Contoh penggunaan */
+                        .rotate-box {
+                        width: 100px;
+                        height: 100px;
+                        background-color: orange;
+                        transform: rotate(45deg);
+                    }
+                    </pre>
+                </div>
+                
+                <br>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SgmNxE9lWcY?feature=shared" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div><br>
+            </div>
+            
+
+                    <div class="quiz-section">
+                        <h3>Latihan Soal</h3>
+                        <div class="question-counter">Soal 1 dari 5</div>
+
+                        <div class="quiz-question active" data-index="0">
+                            <p>1. Properti CSS yang digunakan untuk mengubah warna teks adalah?</p>
+                            <div class="quiz-options">
+                                <div class="quiz-option" data-correct="true">color</div>
+                                <div class="quiz-option">background-color</div>
+                                <div class="quiz-option">text-color</div>
+                                <div class="quiz-option">font-color</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-question" data-index="1">
+                            <p>2. Properti CSS yang digunakan untuk memberikan efek bayangan pada teks adalah?</p>
+                            <div class="quiz-options">
+                                <div class="quiz-option">shadow</div>
+                                <div class="quiz-option" data-correct="true">text-shadow</div>
+                                <div class="quiz-option">box-shadow</div>
+                                <div class="quiz-option">font-shadow</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-question" data-index="2">
+                            <p>3. Apa nilai yang harus digunakan dalam properti display untuk membuat elemen sejajar secara horizontal?</p>
+                            <div class="quiz-options">
+                                <div class="quiz-option">block</div>
+                                <div class="quiz-option" data-correct="true">inline</div>
+                                <div class="quiz-option">flex</div>
+                                <div class="quiz-option">grid</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-question" data-index="3">
+                            <p>4. Properti CSS yang digunakan untuk membuat transisi animasi adalah?</p>
+                            <div class="quiz-options">
+                                <div class="quiz-option">animation</div>
+                                <div class="quiz-option">transform</div>
+                                <div class="quiz-option" data-correct="true">transition</div>
+                                <div class="quiz-option">keyframes</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-question" data-index="4">
+                            <p>5. Properti CSS yang digunakan untuk mengatur tata letak fleksibel pada elemen adalah?</p>
+                            <div class="quiz-options">
+                                <div class="quiz-option">position: relative</div>
+                                <div class="quiz-option">align-items: center</div>
+                                <div class="quiz-option">float: left</div>
+                                <div class="quiz-option" data-correct="true">display: flex</div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="quiz-navigation">
+                            <button class="navigation-button" id="prevQuestion" disabled>Sebelumnya</button>
+                            <button class="navigation-button" id="nextQuestion" disabled>Selanjutnya</button>
+                        </div>
+
+                        <div class="score-section" id="scoreSection">
+                            <h3>Hasil Quiz</h3>
+                            <div class="progress-container">
+                                <div class="progress-bar" id="scoreBar"></div>
+                            </div>
+                            <p id="scoreText">Anda menjawab benar <span id="correctCount">0</span> dari 5 soal (<span
+                                    id="scorePercentage">0%</span>)</p>
+                            <div id="feedbackText"></div>
+                            <div class="action-buttons">
+                                <button class="action-button" id="retryButton">Coba Lagi</button>
+                                <a href="../index.html" class="action-button" id="nextRoadmapButton">Lanjut ke Materi
+                                    Berikutnya</a>
+                            </div>
+                            <div id="loadingMessage" class="loading-message">Mengarahkan ke materi berikutnya...</div>
+                        </div>
+                    </div>
+        </section>
+    </main>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>📚 AI Assistant</h3>
+            <span>▲</span>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot-message">Halo! Saya asisten AI untuk membantu pembelajaran Frontend Development Anda. Ada yang bisa saya bantu?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Tanyakan sesuatu...">
+            <button>Kirim</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

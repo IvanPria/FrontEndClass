@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndClass - Pengenalan Internet</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Front<span>End</span>Class</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="../index.html" class="active">Belajar</a></li>
+                    <li><a href="#">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-material active">
+            <a href="../index.html" class="back-to-courses"><img src="../img/angle-circle-left.png" alt="back" width="40" height="40"></a>
+            <h2>Git & Github</h2>
+
+            <div class="course-material-content">
+                <h3>Apa itu NPM</h3>
+                <p>
+                    NPM (Node Package Manager) adalah manajer paket untuk Node.js yang digunakan untuk mengelola dependensi paket/library dalam proyek JavaScript. NPM adalah alat yang memudahkan kita untuk menginstal, memperbarui, dan menghapus paket yang diperlukan dalam proyek kita. Dengan NPM, kita dapat dengan mudah mengelola berbagai library dan alat yang digunakan dalam pengembangan aplikasi web, seperti React, Express, Tailwind CSS, dan banyak lagi.
+                </p>
+                <br><br>
+                
+                <h3>Fungsi Utama NPM</h3>
+                <p>
+                    <ul>
+                        <li>Install package/library dari internet</li>
+                        <li>Menyimpan informasi dependensi di file package.json</li>
+                        <li>Mengelola versi dari library tersebut</li>
+                        <li>Mem-publish (upload) package buatan sendiri ke internet (npm registry)</li>
+                    </ul>
+                </p>
+                <br><br>
+
+                <h3>Perintah Dasar NPM</h3>
+                <p>
+                    <ul>
+                        <li><strong>npm init</strong>: Membuat file package.json baru.</li>
+                        <li><strong>npm install [package-name]</strong>: Menginstal package/library dari npm registry.</li>
+                        <li><strong>npm uninstall [package-name]</strong>: Menghapus package/library dari proyek.</li>
+                        <li><strong>npm update</strong>: Memperbarui semua package/library ke versi terbaru.</li>
+                        <li><strong>npm list</strong>: Menampilkan daftar semua package/library yang terinstal dalam proyek.</li>
+                    </ul>
+                </p>
+                <br><br>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2V1UUhBJ62Y?si=ovDvZZihBrTyon95" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="quiz-section">
+            <h3>Latihan Soal</h3>
+            <div class="question-counter">Soal 1 dari 5</div>
+            
+            <div class="quiz-question active" data-index="0">
+                <p>1. Apa fungsi utama dari NPM?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">Mengedit file HTML</div>
+                    <div class="quiz-option">Mengatur tampilan website</div>
+                    <div class="quiz-option" data-correct="true">Mengelola dan menginstal package JavaScript</div>
+                    <div class="quiz-option">Membuat gambar untuk website</div>
+                </div>
+            </div>
+
+            <div class="quiz-question" data-index="1">
+                <p>2. Perintah apa yang digunakan untuk membuat file package.json dalam sebuah proyek?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">npm install</div>
+                    <div class="quiz-option">npm start</div>
+                    <div class="quiz-option">npm build</div>
+                    <div class="quiz-option" data-correct="true">npm init</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question" data-index="2">
+                <p>3. File manakah yang menyimpan daftar dependensi yang digunakan oleh proyek?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">index.html</div>
+                    <div class="quiz-option" data-correct="true">package.json</div>
+                    <div class="quiz-option">node_modules/</div>
+                    <div class="quiz-option">server.js</div>
+                </div>
+            </div>
+        
+            <div class="quiz-question" data-index="3">
+                <p>4. Apa fungsi dari folder node_modules/?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">Tempat menyimpan file gambar</div>
+                    <div class="quiz-option">Tempat menyimpan file HTML</div>
+                    <div class="quiz-option">Tempat menyimpan file konfigurasi</div>
+                    <div class="quiz-option" data-correct="true">Tempat menyimpan semua package/library yang diinstal melalui NPM</div>
+                </div>
+            </div>
+
+            <div class="quiz-question" data-index="4">
+                <p>5. Apa perbedaan antara npm install dan npm install [nama_package]?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">npm install untuk satu package, yang satu untuk semua</div>
+                    <div class="quiz-option" data-correct="true">npm install menginstal semua dependensi dari package.json, sedangkan npm install [nama_package] menginstal satu package tertentu</div>
+                    <div class="quiz-option">Tidak ada perbedaan</div>
+                    <div class="quiz-option">npm install untuk menghapus package</div>
+                </div>
+            </div>
+
+            <div class="quiz-navigation">
+                <button class="navigation-button" id="prevQuestion" disabled>Sebelumnya</button>
+                <button class="navigation-button" id="nextQuestion" disabled>Selanjutnya</button>
+            </div>
+            
+            <div class="score-section" id="scoreSection">
+                <h3>Hasil Quiz</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="scoreBar"></div>
+                </div>
+                <p id="scoreText">Anda menjawab benar <span id="correctCount">0</span> dari 5 soal (<span id="scorePercentage">0%</span>)</p>
+                <div id="feedbackText"></div>
+                <div class="action-buttons">
+                    <button class="action-button" id="retryButton">Coba Lagi</button>
+                    <a href="../index.html" class="action-button" id="nextRoadmapButton">Lanjut ke Materi Berikutnya</a>
+                </div>
+                <div id="loadingMessage" class="loading-message">Mengarahkan ke materi berikutnya...</div>
+            </div>
+        </div>
+        </section>
+    </main>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>📚 AI Assistant</h3>
+            <span>▲</span>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot-message">Halo! Saya asisten AI untuk membantu pembelajaran Frontend Development Anda. Ada yang bisa saya bantu?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Tanyakan sesuatu...">
+            <button>Kirim</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndClass - HTML Dasar</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Front<span>End</span>Class</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="../index.html" class="active">Belajar</a></li>
+                    <li><a href="#">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-material active">
+            <a href="../index.html" class="back-to-courses"><img src="../img/angle-circle-left.png" alt="kembali" width="40" height="40"></a>
+            <h2>HTML Dasar</h2>
+
+            <div class="course-material-content">
+                <h3>Apa itu HTML</h3>
+                <p>HTML adalah singkatan dari HyperText Markup Language. Bahasa ini digunakan di frontend dan memberikan struktur pada halaman web yang dapat Anda tata gayanya menggunakan CSS dan dibuat interaktif menggunakan JavaScript.</p>
+                <p>HTML menggunakan elemen-elemen seperti <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code>, dan lainnya untuk mengatur teks, gambar, tautan, dan elemen lainnya dalam sebuah halaman web.</p>        
+                <br>        
+                
+                <h3>Struktur Dasar HTML</h3>
+                <p>HTML (HyperText Markup Language) memiliki struktur dasar yang harus diikuti agar halaman web dapat ditampilkan dengan benar di browser. Struktur ini terdiri dari beberapa elemen utama yang membentuk kerangka dasar sebuah halaman web.</p>
+                <br>
+                <div class="topic-list">
+                    <h4>1. Elemen Utama HTML</h4><br>
+                    <ul>
+                        <li><code>&lt;!DOCTYPE html&gt;</code> → Menentukan bahwa dokumen ini menggunakan HTML5.</li>
+                        <li><code>&lt;html&gt;</code> → Elemen utama yang menampung seluruh isi halaman web.</li>
+                        <li><code>&lt;head&gt;</code> → Berisi informasi tentang halaman web seperti judul dan metadata.</li>
+                        <li><code>&lt;body&gt;</code> → Berisi konten utama yang ditampilkan di browser.</li>
+                    </ul><br>
+                    
+                    <h4>2. Contoh Struktur Dasar HTML</h4><br>
+                    <pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="id"&gt;
+                            &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                &lt;title&gt;Halaman Pertama Saya&lt;/title&gt;
+                                &lt;link rel="stylesheet" href="style.css"&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;h1&gt;Selamat Datang di Website Saya&lt;/h1&gt;
+                                &lt;p&gt;Ini adalah halaman web pertama saya menggunakan HTML.&lt;/p&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <h2></h2>
+                
+                <h3>Elemen dan Tag HTML</h3>
+                <p>Dalam HTML, elemen dan tag digunakan untuk menyusun dan menampilkan konten di halaman web.</p>
+                <br>
+
+                <h4>1. Jenis-Jenis Elemen HTML</h4>
+                    <h5>a. Elemen Blok</h5>
+                    <p>Elemen blok selalu memulai baris baru dan memenuhi lebar penuh.</p>
+                        <pre>
+                            &lt;div&gt;Ini elemen blok&lt;/div&gt;
+                            &lt;p&gt;Paragraf adalah elemen blok&lt;/p&gt;
+                        </pre>
+
+                    <h5>b. Elemen Inline</h5>
+                    <p>Elemen inline tidak memulai baris baru dan hanya selebar kontennya.</p>
+                        <pre>
+                            &lt;span&gt;Ini elemen inline&lt;/span&gt;
+                            &lt;a href="#"&gt;Tautan adalah elemen inline&lt;/a&gt;
+                        </pre> 
+                    
+                <h4>2. Contoh Elemen HTML yang Sering Digunakan</h4>
+                    <ul>
+                        <li><code>&lt;h1&gt;</code> hingga <code>&lt;h6&gt;</code> → Menampilkan judul.</li>
+                        <li><code>&lt;p&gt;</code> → Menampilkan paragraf teks.</li>
+                        <li><code>&lt;a&gt;</code> → Membuat tautan ke halaman lain.</li>
+                        <li><code>&lt;img&gt;</code> → Menampilkan gambar.</li>
+                        <li><code>&lt;ul&gt;</code> dan <code>&lt;ol&gt;</code> → Membuat daftar.</li>
+                        <li><code>&lt;table&gt;</code> → Membuat tabel.</li>
+                        <li><code>&lt;form&gt;</code> → Membuat formulir input.</li>
+                    </ul>
+                </div>                
+                <h2></h2>
+
+                <h3>Atribut pada HTML</h3>
+                <p>Atribut digunakan untuk memberikan informasi tambahan pada elemen HTML. Format umum atribut: &lt;elemen nama_atribut="nilai"&gt;Isi Elemen&lt;/elemen&gt;</p>
+                <br>
+                <h4>1. Contoh Atribut Global</h4>
+                    <p>Atribut yang dapat digunakan di hampir semua elemen.</p>
+                        <ul>
+                            <li>
+                                <code>&lt;p&gt;</code> (paragraf)
+                                <pre>
+                                    &lt;p id="paragraf1" class="teks-biru" style="font-size: 18px;" title="Ini adalah paragraf pertama"&gt;
+                                    Ini adalah contoh atribut global.
+                                    &lt;/p&gt;
+                                </pre>
+                            </li>
+                        </ul>
+                    <br>
+                    <h4>2. Contoh Atribut Khusus</h4>
+                        <p>Atribut yang dapat digunakan di hanya dibeberapa elemen.</p>
+                            <ul>
+                                <li>
+                                    <code>&lt;a&gt;</code> (Tautan)
+                                    <pre>
+                                        &lt;a href="https://www.google.com" target="_blank"&gt;Kunjungi Google&lt;/a&gt;
+                                    </pre>
+                                </li>
+                                <li><code>&lt;img&gt;</code> (Gambar)
+                                    <pre>
+                                        &lt;img src="gambar.jpg" alt="Gambar tidak ditemukan" width="200"&gt;
+                                    </pre>
+                                </li>
+                                <li>
+                                    <code>&lt;input&gt;</code> (Formulir)
+                                    <pre>
+                                    &lt;input type="text" placeholder="Masukkan nama Anda"&gt;
+                                    </pre>         
+                                </li>
+                            </ul>
+                        <br>
+
+                <h2></h2>
+                <h3>Media dalam HTML</h3>
+                    <p>Media dalam HTML digunakan untuk menampilkan gambar, audio, video, dan iframe dalam halaman web.</p>
+                    <br>
+                    <div>
+                        <h4>1. Gambar (<code>&lt;img&gt;</code>)</h4>
+                        <p>Elemen <code>&lt;img&gt;</code> digunakan untuk menampilkan gambar.</p>
+                        <pre>&lt;img src="gambar.jpg" alt="Gambar tidak ditemukan" width="200"&gt;</pre>
+                        <img src="https://via.placeholder.com/200" alt="Contoh Gambar" width="200">
+                    </div>
+    
+                    <br>
+                    <div>
+                        <h4>2. Audio (<code>&lt;audio&gt;</code>)</h4>
+                        <p>Elemen <code>&lt;audio&gt;</code> digunakan untuk menampilkan pemutar audio.</p>
+                        <pre>&lt;audio controls&gt;
+                        &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+                        Browser Anda tidak mendukung pemutar audio.
+                        &lt;/audio&gt;</pre>
+                        <audio controls>
+                            <source src="audio.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+    
+                    <br>
+                    <div>
+                        <h4>3. Video (<code>&lt;video&gt;</code>)</h4>
+                        <p>Elemen <code>&lt;video&gt;</code> digunakan untuk menampilkan pemutar video.</p>
+                        <pre>&lt;video width="300" controls&gt;
+                        &lt;source src="video.mp4" type="video/mp4"&gt;
+                        Browser Anda tidak mendukung pemutar video.
+                        &lt;/video&gt;</pre>
+                        <video width="300" controls>
+                            <source src="video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+    
+                    <br>
+                    <div>
+                        <h4>4. Iframe (<code>&lt;iframe&gt;</code>)</h4>
+                        <p>Elemen <code>&lt;iframe&gt;</code> digunakan untuk menyematkan halaman web lain dalam halaman kita.</p>
+                        <pre>&lt;iframe src="https://www.example.com" width="300" height="200"&gt;&lt;/iframe&gt;</pre>
+                        <iframe src="https://www.example.com" width="300" height="200"></iframe>
+                    </div>
+                
+                <h2></h2>
+
+                <h3>Form dan Input pada HTML</h3>
+                    <p>Formulir dalam HTML digunakan untuk mengumpulkan data dari pengguna melalui berbagai jenis input.</p>
+                    <div>
+                        <h4>1. Elemen Formulir (<code>&lt;form&gt;</code>)</h4>
+                        <p>Elemen <code>&lt;form&gt;</code> digunakan untuk membuat formulir.</p>
+                        <pre>&lt;form action="submit.php" method="POST"&gt;...&lt;/form&gt;</pre>
+                    </div>
+    
+                    <br>
+                    <div>
+                        <h4>2. Input Teks (<code>&lt;input&gt;</code>)</h4>
+                        <p>Input teks memungkinkan pengguna memasukkan teks.</p>
+                        <pre>&lt;input type="text" name="nama" placeholder="Masukkan nama Anda"&gt;</pre>
+                        <input type="text" name="nama" placeholder="Masukkan nama Anda">
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <h4>3. Input Email (<code>&lt;input&gt;</code>)</h4>
+                        <p>Input email memungkinkan pengguna memasukkan alamat email.</p>
+                        <pre>&lt;input type="email" name="email" placeholder="Masukkan email Anda"&gt;</pre>
+                        <input type="email" name="email" placeholder="Masukkan email Anda">
+                    </div>
+    
+                    <br>
+                    <div>
+                        <h4>4. Input Password (<code>&lt;input&gt;</code>)</h4>
+                        <p>Input password menyembunyikan karakter yang diketik oleh pengguna.</p>
+                        <pre>&lt;input type="password" name="password" placeholder="Masukkan kata sandi"&gt;</pre>
+                        <input type="password" name="password" placeholder="Masukkan kata sandi">
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <h4>5. Tombol Kirim (<code>&lt;button&gt;</code>)</h4>
+                        <p>Tombol digunakan untuk mengirimkan data formulir.</p>
+                        <pre>&lt;button type="submit"&gt;Kirim&lt;/button&gt;</pre>
+                        <button type="submit">Kirim</button>
+                    </div>
+                    <br>
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE?feature=shared" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+        
+        <div class="quiz-section">
+            <h3>Latihan Soal</h3>
+            <div class="question-counter">Soal 1 dari 5</div>
+            
+            <div class="quiz-question active" data-index="0">
+                <p>1. Elemen HTML yang digunakan untuk membuat tautan adalah?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">&lt;link&gt;</div>
+                    <div class="quiz-option">&lt;href&gt;</div>
+                    <div class="quiz-option">&lt;nav&gt;</div>
+                    <div class="quiz-option" data-correct="true">&lt;a&gt;</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question active" data-index="1">
+                <p>2. Elemen yang digunakan untuk menyisipkan gambar dalam HTML adalah?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="true">&lt;img&gt;</div>
+                    <div class="quiz-option">&lt;picture&gt;</div>
+                    <div class="quiz-option">&lt;media&gt;</div>
+                    <div class="quiz-option">&lt;figure&gt;</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question active" data-index="2">
+                <p>3. Atribut HTML yang digunakan untuk menentukan alamat tautan dalam elemen &lt;a&gt; adalah?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="true">href</div>
+                    <div class="quiz-option">src</div>
+                    <div class="quiz-option">link</div>
+                    <div class="quiz-option">target</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question active" data-index="3">
+                <p>4. Format dasar dokumen HTML dimulai dengan elemen?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">&lt;html&gt;</div>
+                    <div class="quiz-option" data-correct="true">&lt;!DOCTYPE html&gt;</div>
+                    <div class="quiz-option">&lt;head&gt;</div>
+                    <div class="quiz-option">&lt;body&gt;</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question active" data-index="4">
+                <p>5. Tag HTML yang digunakan untuk membuat daftar tidak berurutan adalah?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">&lt;ol&gt;</div>
+                    <div class="quiz-option">&lt;li&gt;</div>
+                    <div class="quiz-option" data-correct="true">&lt;ul&gt;</div>
+                    <div class="quiz-option">&lt;dl&gt;</div>
+                </div>
+            </div>
+            
+            <div class="quiz-navigation">
+                <button class="navigation-button" id="prevQuestion" disabled>Sebelumnya</button>
+                <button class="navigation-button" id="nextQuestion" disabled>Selanjutnya</button>
+            </div>
+            
+            <div class="score-section" id="scoreSection">
+                <h3>Hasil Quiz</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="scoreBar"></div>
+                </div>
+                <p id="scoreText">Anda menjawab benar <span id="correctCount">0</span> dari 5 soal (<span id="scorePercentage">0%</span>)</p>
+                <div id="feedbackText"></div>
+                <div class="action-buttons">
+                    <button class="action-button" id="retryButton">Coba Lagi</button>
+                    <a href="../index.html" class="action-button" id="nextRoadmapButton">Lanjut ke Materi Berikutnya</a>
+                </div>
+                <div id="loadingMessage" class="loading-message">Mengarahkan ke materi berikutnya...</div>
+            </div>
+        </div>
+        </section>
+    </main>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>📚 AI Assistant</h3>
+            <span>▲</span>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot-message">Halo! Saya asisten AI untuk membantu pembelajaran Frontend Development Anda. Ada yang bisa saya bantu?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Tanyakan sesuatu...">
+            <button>Kirim</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

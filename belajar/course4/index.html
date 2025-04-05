@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndClass - HTML Dasar</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Front<span>End</span>Class</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="../index.html" class="active">Belajar</a></li>
+                    <li><a href="#">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-material active">
+            <a href="../index.html" class="back-to-courses"><img src="../img/angle-circle-left.png" alt="kembali" width="40" height="40"></a>
+            <h2>JavaScript Dasar</h2>
+    
+                <div class="course-material-content">
+                    <h3>Dasar-Dasar JavaScript</h3>
+                    <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web lebih interaktif. Dengan JavaScript, kita dapat menangani event, memanipulasi DOM, dan membuat animasi di dalam browser.</p>
+                    <br>
+                    <p>Fungsi JavaScript:</p>
+                    <div>
+                        <ul>
+                            <li>Menambahkan interaktivitas pada halaman web seperti pop-up, animasi, dan efek transisi.</li>
+                            <li>Memanipulasi elemen HTML secara dinamis tanpa perlu memuat ulang halaman.</li>
+                            <li>Mengontrol perilaku form dan validasi input pengguna sebelum dikirim ke server.</li>
+                            <li>Berkomunikasi dengan server melalui AJAX untuk pengambilan data secara real-time.</li>
+                            <li>Mendukung pengembangan aplikasi web modern dengan framework seperti React, Vue, dan Angular.</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <h4>Contoh Struktur Dasar JavaScript</h4>
+                    <pre>
+                        &lt;script&gt;
+                            // Menampilkan pesan ke dalam console
+                            console.log("Hello, JavaScript!");
+                        &lt;/script&gt;
+                    </pre>
+                    <br>
+                    <h4>Variabel dalam JavaScript</h4>
+                    <p>Variabel digunakan untuk menyimpan data dalam JavaScript. Ada tiga kata kunci utama untuk mendeklarasikan variabel:</p>
+                    <ul>
+                        <li><code>var</code> - Memiliki cakupan fungsi dan dapat diubah.</li>
+                        <li><code>let</code> - Memiliki cakupan blok dan lebih aman digunakan.</li>
+                        <li><code>const</code> - Memiliki cakupan blok dan nilainya tidak dapat diubah setelah dideklarasikan.</li>
+                    </ul>
+                    <pre>
+                        let nama = "John";
+                        const umur = 25;
+                        console.log(nama + " berumur " + umur + " tahun.");
+                    </pre>
+                    <br>
+                    <h4>Fungsi dalam JavaScript</h4>
+                    <p>Fungsi adalah blok kode yang dapat digunakan kembali untuk menjalankan tugas tertentu.</p>
+                    <pre>
+                        function sapa(nama) {
+                            return "Halo, " + nama + "!";
+                        }
+                        console.log(sapa("Alice"));
+                    </pre>
+                    <br>
+                    <h4>Event Handling</h4>
+                    <p>JavaScript memungkinkan kita untuk menangani berbagai event seperti klik, hover, dan input pengguna.</p>
+                    <pre>
+                        &lt;button onclick="alert('Tombol diklik!')"&gt;Klik Saya!&lt;/button&gt;
+                    </pre>
+                </div>
+
+                <h2></h2>
+    
+                <div class="course-material-content">
+                    <h3>Fungsi dan Scope dalam JavaScript</h3>
+                    <p>Fungsi dalam JavaScript adalah blok kode yang dirancang untuk melakukan tugas tertentu. Fungsi membantu dalam modularisasi kode dan meningkatkan keterbacaan serta pemeliharaan kode.</p>
+                    <br>
+                    <h4>1. Definisi Fungsi</h4>
+                    <p>Fungsi dapat dideklarasikan dengan menggunakan kata kunci <code>function</code> atau menggunakan arrow function (<code>=&gt;</code>).</p>
+                    <pre>
+                        <code>
+                // Deklarasi fungsi
+                function sapa(nama) {
+                    return "Halo, " + nama + "!";
+                }
+                
+                // Arrow function
+                const sapaArrow = (nama) => "Halo, " + nama + "!";
+                
+                // Pemanggilan fungsi
+                console.log(sapa("Andi"));
+                console.log(sapaArrow("Budi"));
+                        </code>
+                    </pre>
+                    <br>
+                    <h4>2. Parameter dan Return</h4>
+                    <p>Fungsi bisa menerima parameter dan mengembalikan nilai dengan menggunakan <code>return</code>.</p>
+                    <pre>
+                        <code>
+                function tambah(a, b) {
+                    return a + b;
+                }
+                
+                console.log(tambah(5, 3)); // Output: 8
+                        </code>
+                    </pre>
+                    <br>
+                    <h4>3. Scope dalam JavaScript</h4>
+                    <p>Scope menentukan di mana variabel dapat diakses dalam kode. Terdapat tiga jenis scope:</p>
+                    <div>
+                        <ul>
+                            <li>Global Scope - Variabel yang dideklarasikan di luar fungsi bisa diakses di mana saja.</li>
+                            <li>Local Scope = Variabel yang dideklarasikan di dalam fungsi hanya bisa diakses dalam fungsi tersebut.</li>
+                            <li>Block Scope - Variabel yang dideklarasikan dengan <code>let</code> atau <code>const</code> hanya bisa diakses dalam blok tempat ia dideklarasikan.</li>
+                        </ul>
+                    </div>
+                    <pre>
+                        <code>
+                let globalVar = "Saya global";
+                
+                function contohScope() {
+                    let localVar = "Saya lokal";
+                    console.log(globalVar); // Bisa diakses
+                    console.log(localVar); // Bisa diakses
+                }
+                
+                console.log(globalVar); // Bisa diakses
+                // console.log(localVar); // Error! localVar tidak bisa diakses di luar fungsi
+                        </code>
+                    </pre>
+                    <br>
+                    <h4>4. Hoisting dalam Fungsi</h4>
+                    <p>JavaScript secara otomatis mengangkat (hoist) deklarasi fungsi ke atas, sehingga kita bisa memanggil fungsi sebelum dideklarasikan.</p>
+                    <pre>
+                        <code>
+                console.log(katakanHalo("Andi")); // Bisa dipanggil sebelum deklarasi
+                
+                function katakanHalo(nama) {
+                    return "Halo, " + nama + "!";
+                }
+                        </code>
+                    </pre>
+                    <br>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg?si=kbLS6KskysM18ksK" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <h2></h2>
+                <div  class="course-material-content">
+                    <h3>DOM (Document Object Model) Manipulation dalam JavaScript</h3>
+                    <p>DOM (Document Object Model) adalah representasi struktur halaman web dalam bentuk pohon yang memungkinkan JavaScript untuk memanipulasi elemen HTML secara dinamis.</p>
+                    
+                    <div>
+                        <h4>1. Mengakses Elemen</h4>
+                        <p>JavaScript menyediakan berbagai metode untuk mengakses elemen dalam DOM.</p>
+                        <pre>
+                            // Mengakses elemen berdasarkan ID
+                            var heading = document.getElementById("judul");
+                            
+                            // Mengakses elemen berdasarkan kelas
+                            var items = document.getElementsByClassName("item");
+                            
+                            // Mengakses elemen berdasarkan tag
+                            var paragraphs = document.getElementsByTagName("p");
+                            
+                            // Menggunakan querySelector
+                            var firstItem = document.querySelector(".item");
+                        </pre>
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <h4>2. Mengubah Konten dan Atribut</h4>
+                        <p>DOM memungkinkan kita untuk mengubah teks dan atribut dari elemen HTML.</p>
+                        <pre>
+                            // Mengubah teks elemen
+                            document.getElementById("judul").innerText = "Judul Baru";
+                            
+                            // Mengubah HTML elemen
+                            document.getElementById("content").innerHTML = "<strong>Konten Baru</strong>";
+                            
+                            // Mengubah atribut elemen
+                            document.getElementById("link").setAttribute("href", "https://example.com");
+                        </pre>
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <h4>3. Menambahkan dan Menghapus Elemen</h4>
+                        <p>Kita dapat menambahkan atau menghapus elemen dari halaman web menggunakan JavaScript.</p>
+                        <pre>
+                            // Membuat elemen baru
+                        var newParagraph = document.createElement("p");
+                        newParagraph.innerText = "Ini paragraf baru";
+                        document.body.appendChild(newParagraph);
+                        
+                        // Menghapus elemen
+                        var elementToRemove = document.getElementById("hapus");
+                        elementToRemove.remove();
+                    </pre>
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <h4>4. Menangani Event</h4>
+                        <p>Event memungkinkan kita untuk merespon aksi pengguna seperti klik, hover, atau input.</p>
+                        <pre>
+                            // Menambahkan event listener untuk tombol
+                            document.getElementById("btn").addEventListener("click", function() {
+                                alert("Tombol diklik!");
+                            });
+                        </pre>
+                    </div>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/7Tok22qxPzQ?si=N84TL8OHbUUsCJih" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <h2></h2>
+                
+                <div class="course-material-content">
+                    <h3>JavaScript Asynchronous Programming</h3>
+                    <p>Asynchronous Programming dalam JavaScript memungkinkan kode untuk berjalan tanpa harus menunggu operasi lain selesai. Hal ini sangat berguna untuk menangani operasi seperti permintaan jaringan, animasi, atau operasi berjangka panjang.</p>
+                    
+                    <div>
+                        <h4>1. Callback Functions</h4>
+                        <p>Callback adalah fungsi yang dikirim sebagai argumen ke fungsi lain dan dieksekusi setelah tugas selesai.</p>
+                        <pre>
+                            function prosesData(callback) {
+                                setTimeout(() => {
+                                    console.log("Proses selesai");
+                                    callback();
+                                }, 2000);
+                            }
+                    
+                            prosesData(() => {
+                                console.log("Lanjut ke proses berikutnya");
+                            });
+                        </pre>
+                    </div><br>
+                    
+                    <div>
+                        <h4>2. Promises</h4>
+                        <p>Promise digunakan untuk menangani operasi asynchronous dengan lebih rapi dibandingkan callback.</p>
+                        <pre>
+                            let janji = new Promise((resolve, reject) => {
+                                setTimeout(() => {
+                                    let sukses = true;
+                                    if (sukses) {
+                                    resolve("Data berhasil didapatkan");
+                                } else {
+                                    reject("Terjadi kesalahan");
+                                }
+                            }, 2000);
+                        });
+                        
+                        janji.then(response => console.log(response))
+                        .catch(error => console.log(error));
+                    </pre>
+                </div>
+                
+                <br>
+                    <div>
+                        <h4>3. Async/Await</h4>
+                        <p>Async/Await adalah cara modern untuk menangani operasi asynchronous dengan sintaks yang lebih mudah dibaca.</p>
+                        <pre>
+                            async function fetchData() {
+                                try {
+                                    let response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+                                    let data = await response.json();
+                                console.log(data);
+                            } catch (error) {
+                                console.log("Terjadi kesalahan: ", error);
+                            }
+                        }
+                        
+                        fetchData();
+                    </pre>
+                </div>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_rh3wslielA?si=ZODJbrbPLSVZcWoV" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <h2></h2>
+                
+                <div class="course-material-content">
+                    <h3>ES6+ (Fitur Modern JavaScript)</h3>
+                    <p>ES6 (ECMAScript 2015) dan versi selanjutnya menghadirkan berbagai fitur modern yang membuat JavaScript lebih efisien dan mudah dibaca. Berikut beberapa fitur utama ES6+:</p>
+                    
+                    <div>
+                        <h4>1. Let dan Const</h4>
+                        <p><code>let</code> dan <code>const</code> digunakan untuk mendeklarasikan variabel dengan cakupan blok.</p>
+                        <pre>
+                            let nama = "John";
+                            const umur = 25;
+                            console.log(nama, umur);
+                        </pre>
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <h4>2. Arrow Function</h4>
+                        <p>Arrow function adalah cara singkat menulis fungsi anonim.</p>
+                        <pre>
+                            const sapa = (nama) => console.log(`Halo, ${nama}!`);
+                            sapa("Alice");
+                        </pre>
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <h4>3. Template Literals</h4>
+                        <p>Gunakan backticks (`) untuk membuat string lebih mudah dibaca dan disisipkan variabel.</p>
+                        <pre>
+                            let nama = "Bob";
+                            let pesan = `Selamat datang, ${nama}!`;
+                        console.log(pesan);
+                    </pre>
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <h4>4. Destructuring</h4>
+                        <p>Destructuring memungkinkan ekstraksi nilai dari array atau objek dengan mudah.</p>
+                        <pre>
+                            let orang = { nama: "Charlie", usia: 30 };
+                        let { nama, usia } = orang;
+                        console.log(nama, usia);
+                    </pre>
+                </div>
+                
+                    <br>
+                    <div>
+                        <h4>5. Spread dan Rest Operator</h4>
+                        <p>Operator spread (<code>...</code>) digunakan untuk menyalin elemen array atau properti objek.</p>
+                        <pre>
+                            let angka = [1, 2, 3];
+                            let angkaBaru = [...angka, 4, 5];
+                            console.log(angkaBaru);
+                        </pre>
+                    </div>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/NCwa_xi0Uuc?si=GAG2Q1FENH87uiOE" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+    
+                <h2></h2>
+                <div class="course-material-content">
+                    <h3>Fetch API</h3>
+                    <p>Fetch API adalah antarmuka JavaScript modern untuk membuat permintaan HTTP di peramban web. Fetch menyediakan cara yang lebih canggih dan fleksibel untuk mengirim dan menerima data dibandingkan dengan metode lama seperti XMLHttpRequest. Fetch menggunakan Promises, yang memungkinkan kode asinkron yang lebih bersih. Fetch mendukung berbagai format data, header kustom, dan berbagai jenis permintaan (GET, POST, dll.). API ini dirancang agar dapat diperluas dan terintegrasi dengan baik dengan teknologi web lainnya. Meskipun lebih sederhana untuk kasus penggunaan dasar, Fetch juga menangani skenario kompleks seperti pembatalan permintaan dan membaca respons yang dialirkan. Fetch didukung secara luas di peramban modern dan telah menjadi standar untuk permintaan jaringan dalam aplikasi JavaScript sisi klien.</p>
+                    <br>
+
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZI0ea5O2oA?si=RjhzwQC0fUWv-vpb" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    
+    
+                        <div class="quiz-section">
+                            <h3>Latihan Soal</h3>
+                            <div class="question-counter">Soal 1 dari 5</div>
+    
+                            <div class="quiz-question active" data-index="0">
+                                <p>1. Apa yang digunakan untuk mengakses elemen HTML dalam JavaScript?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Cascading Style Sheets (CSS)</div>
+                                    <div class="quiz-option">HyperText Markup Language (HTML)</div>
+                                    <div class="quiz-option">Application Programming Interface (API)</div>
+                                    <div class="quiz-option" data-correct="true">Document Object Model (DOM)</div>
+                                </div>
+                            </div>
+                        
+                            <div class="quiz-question active" data-index="1">
+                                <p>2. Metode mana yang digunakan untuk menangkap elemen berdasarkan ID?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">document.querySelector()</div>
+                                    <div class="quiz-option" data-correct="true">document.getElementById()</div>
+                                    <div class="quiz-option">document.getElementsByClassName()</div>
+                                    <div class="quiz-option">document.createElement()</div>
+                                </div>
+                            </div>
+                        
+                            <div class="quiz-question active" data-index="2">
+                                <p>3. Apa fungsi dari addEventListener dalam JavaScript?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option" data-correct="true">Menambahkan event handler ke elemen</div>
+                                    <div class="quiz-option">Menghapus elemen HTML</div>
+                                    <div class="quiz-option">Mengubah warna teks</div>
+                                    <div class="quiz-option">Menjalankan fetch API</div>
+                                </div>
+                            </div>
+                        
+                            <div class="quiz-question active" data-index="3">
+                                <p>4. Bagaimana cara mengambil data dari server dengan JavaScript?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option" data-correct="true">fetch()</div>
+                                    <div class="quiz-option">getJSON()</div>
+                                    <div class="quiz-option">requestData()</div>
+                                    <div class="quiz-option">getData()</div>
+                                </div>
+                            </div>
+                        
+                            <div class="quiz-question active" data-index="4">
+                                <p>5. Apa yang dimaksud dengan asynchronous programming dalam JavaScript?</p>
+                                <div class="quiz-options">
+                                    <div class="quiz-option">Pemrograman yang hanya berjalan di server</div>
+                                    <div class="quiz-option">Pemrograman yang selalu memerlukan refresh halaman</div>
+                                    <div class="quiz-option" data-correct="true">Pemrograman yang memungkinkan eksekusi kode tanpa harus menunggu tugas lain selesai</div>
+                                    <div class="quiz-option">Pemrograman yang hanya berjalan di sisi klien</div>
+                                </div>
+                            </div>
+                            
+    
+                            <div class="quiz-navigation">
+                                <button class="navigation-button" id="prevQuestion" disabled>Sebelumnya</button>
+                                <button class="navigation-button" id="nextQuestion" disabled>Selanjutnya</button>
+                            </div>
+    
+                            <div class="score-section" id="scoreSection">
+                                <h3>Hasil Quiz</h3>
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="scoreBar"></div>
+                                </div>
+                                <p id="scoreText">Anda menjawab benar <span id="correctCount">0</span> dari 5 soal (<span
+                                        id="scorePercentage">0%</span>)</p>
+                                <div id="feedbackText"></div>
+                                <div class="action-buttons">
+                                    <button class="action-button" id="retryButton">Coba Lagi</button>
+                                    <a href="../index.html" class="action-button" id="nextRoadmapButton">Lanjut ke Materi
+                                        Berikutnya</a>
+                                </div>
+                                <div id="loadingMessage" class="loading-message">Mengarahkan ke materi berikutnya...</div>
+                            </div>
+                        </div>
+            </section>
+    </main>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>📚 AI Assistant</h3>
+            <span>▲</span>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot-message">Halo! Saya asisten AI untuk membantu pembelajaran Frontend Development Anda. Ada yang bisa saya bantu?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Tanyakan sesuatu...">
+            <button>Kirim</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
     --dark: #34495e;
     --light: #ecf0f1;
     --warning: #e74c3c;
-    --background: #eff8fe;
+    --background: #f1fbff;
 }
 
 * {
@@ -17,7 +17,7 @@
 body {
     background-color: var(--background);
     color: var(--dark);
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* HEADER */
@@ -73,34 +73,35 @@ nav ul li a.active {
     color: var(--primary);
 }
 
+
+/* CONTENT BERANDA */
 main {
     max-width: 1200px;
-    margin: 4.5rem auto 1rem;
+    margin: 4.5rem auto 2rem;
     padding: 0 2rem;
     min-height: calc(100vh - 180px);
 }
 
-/* CONTENT BERANDA */
 .hero {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .hero-content {
     flex: 1;
-    padding-right: 5rem;
+    padding-right: 3rem;
 }
 
 .hero h1 {
-    font-size: 2rem; /* 2.5 */
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--dark);
 }
 
 .hero p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
     color: #666;
 }
 
@@ -133,7 +134,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .feature-card {
@@ -150,13 +151,9 @@ main {
 }
 
 .feature-icon {
-    font-size: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     color: var(--primary);
-}
-
-.feature-icon img {
-    width: 50px;
-    height: 50px;
 }
 
 .feature-card h3 {
@@ -168,6 +165,7 @@ main {
 .feature-card p {
     color: #666;
 }
+
 
 @media (max-width: 768px) {
     .hero {
@@ -181,5 +179,11 @@ main {
     
     .features {
         grid-template-columns: 1fr;
+    }
+    
+    .chat-container {
+        width: 90%;
+        right: 5%;
+        bottom: 10px;
     }
 }

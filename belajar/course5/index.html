@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndClass - Pengenalan Internet</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Front<span>End</span>Class</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="../index.html" class="active">Belajar</a></li>
+                    <li><a href="#">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-material active">
+            <a href="../index.html" class="back-to-courses"><img src="../img/angle-circle-left.png" alt="back" width="40" height="40"></a>
+            <h2>Git & Github</h2>
+
+            <div class="course-material-content">
+                <h3>Apa itu Git</h3>
+                <p>Git adalah sistem kontrol versi terdistribusi yang dirancang untuk menangani proyek dengan ukuran apa pun dengan cepat dan efisien. Diciptakan oleh Linus Torvalds pada tahun 2005, Git melacak perubahan dalam kode sumber selama pengembangan perangkat lunak, yang memungkinkan banyak pengembang untuk bekerja sama dalam pengembangan non-linier. Git memberikan dukungan yang kuat untuk alur kerja pengembangan yang bercabang, menggabungkan, dan terdistribusi. Git menyimpan riwayat lengkap semua perubahan, yang memungkinkan pengembalian dan perbandingan yang mudah antar versi. Sifatnya yang terdistribusi berarti setiap pengembang memiliki salinan repositori yang lengkap, yang memungkinkan pekerjaan dan pencadangan offline. Kecepatan, fleksibilitas, dan kemampuan percabangan dan penggabungan Git yang kuat telah menjadikannya sistem kontrol versi yang paling banyak digunakan dalam pengembangan perangkat lunak, khususnya untuk proyek sumber terbuka.</p>
+                <br>
+                <h2></h2>
+                
+                <h3>Apa itu Github</h3>
+                <p>GitHub telah menjadi pusat proyek sumber terbuka dan digunakan secara luas oleh pengembang, perusahaan, dan organisasi untuk repositori pribadi dan publik. GitHub diakuisisi oleh Microsoft pada tahun 2018 tetapi terus beroperasi sebagai entitas yang relatif independen. Popularitas GitHub telah menjadikannya alat penting dalam alur kerja pengembangan perangkat lunak modern dan platform utama untuk memamerkan proyek pengodean dan berkontribusi pada perangkat lunak sumber terbuka.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/S7XpTAnSDL4?si=WWnfOgmUmsEy5l_m" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="quiz-section">
+            <h3>Latihan Soal</h3>
+            <div class="question-counter">Soal 1 dari 5</div>
+            
+            <div class="quiz-question active" data-index="0">
+                <p>1. Apa fungsi utama dari Git?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">Menyimpan file secara online</div>
+                    <div class="quiz-option">Mengatur tampilan halaman web</div>
+                    <div class="quiz-option" data-correct="true">Melacak perubahan dan versi dalam proyek</div>
+                    <div class="quiz-option">Mengedit gambar dalam proyek</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question" data-index="1">
+                <p>2. Perintah Git apa yang digunakan untuk menyimpan perubahan yang sudah ditandai (staged)?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">git push</div>
+                    <div class="quiz-option">git status</div>
+                    <div class="quiz-option">git add</div>
+                    <div class="quiz-option" data-correct="true">git commit</div>
+                </div>
+            </div>
+            
+            <div class="quiz-question" data-index="2">
+                <p>3. Apa perbedaan utama antara Git dan GitHub?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">Git untuk desain, GitHub untuk database</div>
+                    <div class="quiz-option" data-correct="true">Git adalah sistem kontrol versi, GitHub adalah platform hosting online untuk proyek Git</div>
+                    <div class="quiz-option">Git untuk frontend, GitHub untuk backend</div>
+                    <div class="quiz-option">Git untuk membuat website, GitHub untuk mengelola konten</div>
+                </div>
+            </div>
+
+            <div class="quiz-question" data-index="3">
+                <p>4. Perintah Git apa yang digunakan untuk menghubungkan repositori lokal ke repositori GitHub?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">git push origin main</div>
+                    <div class="quiz-option">git init</div>
+                    <div class="quiz-option">git clone [url]</div>
+                    <div class="quiz-option" data-correct="true">git remote add origin [url]</div>
+                </div>
+            </div>
+
+            <div class="quiz-question" data-index="4">
+                <p>5. Apa yang dimaksud dengan commit dalam Git, dan apa fungsinya?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="true">Menyimpan perubahan beserta pesan deskriptif ke dalam riwayat proyek</div>
+                    <div class="quiz-option">Mengunggah semua file ke internet</div>
+                    <div class="quiz-option">Internet System Protocol</div>
+                    <div class="quiz-option">Menghapus file dari repositori</div>
+                </div>
+            </div>
+            
+            <div class="quiz-navigation">
+                <button class="navigation-button" id="prevQuestion" disabled>Sebelumnya</button>
+                <button class="navigation-button" id="nextQuestion" disabled>Selanjutnya</button>
+            </div>
+            
+            <div class="score-section" id="scoreSection">
+                <h3>Hasil Quiz</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="scoreBar"></div>
+                </div>
+                <p id="scoreText">Anda menjawab benar <span id="correctCount">0</span> dari 5 soal (<span id="scorePercentage">0%</span>)</p>
+                <div id="feedbackText"></div>
+                <div class="action-buttons">
+                    <button class="action-button" id="retryButton">Coba Lagi</button>
+                    <a href="../index.html" class="action-button" id="nextRoadmapButton">Lanjut ke Materi Berikutnya</a>
+                </div>
+                <div id="loadingMessage" class="loading-message">Mengarahkan ke materi berikutnya...</div>
+            </div>
+        </div>
+        </section>
+    </main>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>📚 AI Assistant</h3>
+            <span>▲</span>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot-message">Halo! Saya asisten AI untuk membantu pembelajaran Frontend Development Anda. Ada yang bisa saya bantu?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Tanyakan sesuatu...">
+            <button>Kirim</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

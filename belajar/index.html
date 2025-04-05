@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndClass - Belajar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Front<span>End</span>Class</div>
+            <nav>
+                <ul>
+                    <li><a href="../main/index.html">Beranda</a></li>
+                    <li><a href="index.html" class="active">Belajar</a></li>
+                    <li><a href="">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-header">
+            <h1>Roadmap Belajar Frontend Development</h1>
+            <p>Selesaikan setiap modul untuk membuka materi selanjutnya</p>
+        </section>
+
+        <section class="course-grid" id="courseGrid">
+            <div class="course-card">
+                <div class="course-icon"><img src="img/internet.png" alt="logo"></div>
+                <div class="course-content">
+                    <h3>1. Pengenalan Internet</h3>
+                    <p>Memahami cara kerja internet, HTTP/HTTPS, DNS, hosting, dan lainnya.</p>
+                </div>
+                <a href="course1/index.html" class="course-button">Mulai Belajar</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon"><img src="img/HTML.png" alt="logo"></div>
+                <div class="course-content">
+                    <h3>2. HTML Dasar</h3>
+                    <p>Mempelajari struktur HTML, semantic elements, form, dan aksesibilitas web.</p>
+                </div>
+                <a href="course2/index.html" class="course-button">Mulai Belajar</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon"><img src="img/CSS.png" alt="logo"></div>
+                <div class="course-content">
+                    <h3>3. CSS Fundamental</h3>
+                    <p>Memahami selectors, box model, layout, flexbox, grid, dan responsive design.</p>
+                </div>
+                <a href="course3/index.html" class="course-button">Mulai Belajar</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon"><img src="img/js.png" alt="logo"></div>
+                <div class="course-content">
+                    <h3>4. JavaScript Dasar</h3>
+                    <p>Belajar tentang variabel, tipe data, fungsi, objek, array, DOM manipulation.</p>
+                </div>
+                <a href="course4/index.html" class="course-button">Mulai Belajar</a>
+            </div>
+
+            
+            <div class="course-card">
+                <div class="course-icon"><img src="img/social.png" alt="logo"></div>
+                <div class="course-content">
+                    <h3>5. GIT & Github</h3>
+                    <p>Version Control System yang digunakan untuk melacak perubahan file/code dalam sebuah proyek.</p>
+                </div>
+                <a href="course5/index.html" class="course-button">Mulai Belajar</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon"><img src="img/npm.png" alt="logo"></div>
+                <div class="course-content">
+                    <h3>6. Node Package Manager</h3>
+                    <p>alat yang mengotomatiskan proses pemasangan, pembaruan, konfigurasi, dan penghapusan paket perangkat lunak.</p>
+                </div>
+                <a href="course6/index.html" class="course-button">Mulai Belajar</a>
+            </div>
+        </section>
+    </main>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>📚 AI Assistant</h3>
+            <span>▲</span>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot-message">Halo! Saya asisten AI untuk membantu pembelajaran Frontend Development Anda. Ada yang bisa saya bantu?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Tanyakan sesuatu...">
+            <button>Kirim</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
