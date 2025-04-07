@@ -1,5 +1,5 @@
 // Constants and configurations
-const API_KEY = ""; // Replace with your actual API key
+const API_KEY = "";
 let chatHistory = [];
 
 // Toggle chat window
