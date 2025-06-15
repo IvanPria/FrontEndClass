@@ -58,6 +58,10 @@
     padding-left: 0.8rem;
 }
 
+.course-material-content p {
+    text-align: justify;
+}
+
 .video-container {
     background-color: var(--background);
     max-width: 100%;

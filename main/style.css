@@ -152,7 +152,6 @@ main {
 
 .feature-icon {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
     color: var(--primary);
 }
 
@@ -164,6 +163,11 @@ main {
 
 .feature-card p {
     color: #666;
+}
+
+.feature-card img {
+    width: 50px;
+    height: auto;
 }
 
 
