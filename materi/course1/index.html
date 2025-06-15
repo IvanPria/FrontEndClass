@@ -6,22 +6,41 @@
     <title>FrontEndClass - Pengenalan Internet</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../main/auth.css">
     <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
-    <header>
+      <header>
         <div class="header-container">
-            <div class="logo">Front<span>End</span>Class</div>
-            <nav>
-                <ul>
-                    <li><a href="../../main/index.html">Beranda</a></li>
-                    <li><a href="../index.html" class="active">Materi</a></li>
+            <div class="nav-left">
+                <div class="logo">Front<span>End</span>Class</div>
+                <nav>
+                    <ul>
+                    <li><a href="../../main/index.html" >Beranda</a></li>
+                    <li><a href="../../materi/index.html" class="active">Materi</a></li>
                     <li><a href="../../tentang/index.html">Tentang</a></li>
-                </ul>
-            </nav>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <!-- Auth buttons (shown when not logged in) -->
+                <div class="auth-buttons" id="authButtons">
+                    <button class="auth-btn login-btn" onclick="openModal('login')">Masuk</button>
+                    <button class="auth-btn signup-btn" onclick="openModal('signup')">Daftar</button>
+                </div>
+                
+                <!-- User avatar (shown when logged in) -->
+                <div class="user-avatar hidden" id="userAvatar" onclick="toggleDropdown()">
+                    <span id="userInitial">A</span>
+                    <div class="user-dropdown" id="userDropdown">
+                        <div class="dropdown-item" onclick="showProfile()">Profil</div>
+                        <div class="dropdown-item" onclick="showSettings()">Pengaturan</div>
+                        <div class="dropdown-item" onclick="logout()">Keluar</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-
     <main>
         <section class="course-material active">
             <a href="../index.html" class="back-to-courses"><img src="../img/angle-circle-left.png" alt="back" width="40" height="40"></a>
@@ -207,8 +226,72 @@
             <button>Kirim</button>
         </div>
     </div>
+        <!-- Login Modal -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal('login')">&times;</button>
+            <div class="modal-header">
+                <h2>Masuk ke Akun</h2>
+                <p>Selamat datang kembali!</p>
+            </div>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                    <div class="error-message" id="loginEmailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <div class="error-message" id="loginPasswordError"></div>
+                </div>
+                <button type="submit" class="submit-btn">Masuk</button>
+            </form>
+            <div class="switch-form">
+                Belum punya akun? <a href="#" onclick="switchModal('login', 'signup')">Daftar di sini</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal-overlay" id="signupModal">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal('signup')">&times;</button>
+            <div class="modal-header">
+                <h2>Buat Akun Baru</h2>
+                <p>Bergabunglah dengan kami sekarang!</p>
+            </div>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <label for="signupName">Nama Lengkap</label>
+                    <input type="text" id="signupName" name="name" required>
+                    <div class="error-message" id="signupNameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="email" required>
+                    <div class="error-message" id="signupEmailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                    <div class="error-message" id="signupPasswordError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Konfirmasi Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <div class="error-message" id="confirmPasswordError"></div>
+                </div>
+                <button type="submit" class="submit-btn">Daftar</button>
+            </form>
+            <div class="switch-form">
+                Sudah punya akun? <a href="#" onclick="switchModal('signup', 'login')">Masuk di sini</a>
+            </div>
+        </div>
+    </div>
 
     <script src="../script.js"></script>
     <script src="script.js"></script>
+    <script src="../../main/auth.js"></script>
 </body>
 </html>

@@ -209,3 +209,4 @@ chatInput.addEventListener('keypress', function(e) {
 if (chatMessages.children.length === 0) {
     addMessage("Halo! Saya asisten AI untuk membantu pembelajaran Frontend Development Anda. Ada yang bisa saya bantu?", 'bot');
 }
+
