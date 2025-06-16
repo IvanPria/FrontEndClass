@@ -12,10 +12,10 @@ Proyek ini bertujuan untuk:
 ## 👥 Anggota Tim
 | Nama  | Peran |
 |-------|-------|
-| Fanny | Pengembang Frontend, Dokumentasi |
-| Andi  | Pengembang Backend, Pengujian |
+| Ivan Pria | Pengembang Frontend, UI Design, Dokumentasi |
+| Andi Raif | Pengembang Backend, Pengembang AI, Pengujian |
 
 ## 🛠️ Teknologi yang Digunakan
-- Bahasa Pemrograman: [contoh: Java, Kotlin, Python]
-- Tools: [contoh: Android Studio, GitHub, VSCode]
-- Database: [contoh: SQLite, Firebase]
+- Bahasa Pemrograman: HTML, CSS, Javascript
+- Tools: VSCode
+- API: Gemini AI, Youtube API
