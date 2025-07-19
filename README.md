@@ -12,8 +12,8 @@ Proyek ini bertujuan untuk:
 ## 👥 Anggota Tim
 | Nama  | Github | Peran |
 |-------|-------|-------|
-| Ivan Pria | [@username](https://github.com/username) | Pengembang Frontend, UI Design, Dokumentasi |
-| Andi Raif | Pengembang Backend, Pengembang AI, Pengujian |
+| Ivan Pria | [@IvanPria](https://github.com/IvanPria) | Pengembang Frontend, UI Design, Dokumentasi |
+| Andi Raif | [@Natthhz](https://github.com/Natthhz) | Pengembang Backend, Pengembang AI, Pengujian |
 
 ## 🛠️ Teknologi yang Digunakan
 - Bahasa Pemrograman: HTML, CSS, Javascript
