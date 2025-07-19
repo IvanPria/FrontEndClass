@@ -7,8 +7,8 @@ This project aims to:
 - Train teamwork in software development.
 - Create an application that serves as an interactive learning platform for users interested in mastering frontend development.
 
-## 👥 Anggota Tim
-| Nama  | Github | Peran |
+## 👥 Team Members
+| Name  | Github | Role |
 |-------|-------|-------|
 | Ivan Pria | [@IvanPria](https://github.com/IvanPria) | Frontend Developer, UI/UX Designer, Documentationi |
 | Andi Raif | [@Natthhz](https://github.com/Natthhz) | Backend Developer, AI Developer, Testing |
