@@ -18,4 +18,4 @@ Proyek ini bertujuan untuk:
 ## 🛠️ Teknologi yang Digunakan
 - Bahasa Pemrograman: HTML, CSS, Javascript
 - Tools: VSCode
-- API: Gemini AI, Youtube API
+- API: Gemini API, Youtube API
