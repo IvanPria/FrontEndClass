@@ -10,9 +10,9 @@ Proyek ini bertujuan untuk:
 - Membuat aplikasi yang dapat digunakan untuk tujuan media pembelajaran interaktif untuk pengguna yang ingin mendalami pengembangan frontend.
 
 ## 👥 Anggota Tim
-| Nama  | Peran |
-|-------|-------|
-| Ivan Pria | Pengembang Frontend, UI Design, Dokumentasi |
+| Nama  | Github | Peran |
+|-------|-------|-------|
+| Ivan Pria | [@username](https://github.com/username) | Pengembang Frontend, UI Design, Dokumentasi |
 | Andi Raif | Pengembang Backend, Pengembang AI, Pengujian |
 
 ## 🛠️ Teknologi yang Digunakan
