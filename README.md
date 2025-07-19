@@ -1,21 +1,19 @@
-## 👨‍💻 Proyek Kolaborasi RPL - FrontEndClass
+## 👨‍💻 RPL Collaboration Project – FrontEndClass
+Welcome! This repository was created as part of the Software Engineering (RPL) course assignment. This project is a collaboration between Ivan Pria and Andi Raif, aimed at developing an AI-based Frontend Development E-Learning Website.
 
-Selamat datang! Repositori ini dibuat sebagai bagian dari tugas mata pelajaran **Rekayasa Perangkat Lunak (RPL)**. Proyek ini merupakan hasil kolaborasi antara **Ivan Pria** dan **Andi Raif** yang bertujuan untuk mengembangkan Website E-Learning Frontend Development Berbasis AI.
-
-## 🎯 Tujuan Proyek
-
-Proyek ini bertujuan untuk:
-- Menerapkan prinsip dan praktik rekayasa perangkat lunak.
-- Melatih kerja tim dalam pengembangan perangkat lunak.
-- Membuat aplikasi yang dapat digunakan untuk tujuan media pembelajaran interaktif untuk pengguna yang ingin mendalami pengembangan frontend.
+## 🎯 Project Objectives
+This project aims to:
+- Apply principles and practices of software engineering.
+- Train teamwork in software development.
+- Create an application that serves as an interactive learning platform for users interested in mastering frontend development.
 
 ## 👥 Anggota Tim
 | Nama  | Github | Peran |
 |-------|-------|-------|
-| Ivan Pria | [@IvanPria](https://github.com/IvanPria) | Pengembang Frontend, UI/UX Design, Dokumentasi |
-| Andi Raif | [@Natthhz](https://github.com/Natthhz) | Pengembang Backend, Pengembang AI, Pengujian |
+| Ivan Pria | [@IvanPria](https://github.com/IvanPria) | Frontend Developer, UI/UX Designer, Documentationi |
+| Andi Raif | [@Natthhz](https://github.com/Natthhz) | Backend Developer, AI Developer, Testing |
 
-## 🛠️ Teknologi yang Digunakan
-- Bahasa Pemrograman: HTML, CSS, Javascript
+## 🛠️ Technologies Used
+- Programming Languages: HTML, CSS, JavaScript
 - Tools: VSCode
-- API: Gemini API, Youtube API
+- APIs: Gemini API, YouTube API
