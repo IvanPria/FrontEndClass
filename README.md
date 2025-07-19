@@ -10,7 +10,7 @@ This project aims to:
 ## 👥 Team Members
 | Name  | Github | Role |
 |-------|-------|-------|
-| Ivan Pria | [@IvanPria](https://github.com/IvanPria) | Frontend Developer, UI/UX Designer, Documentationi |
+| Ivan Pria | [@IvanPria](https://github.com/IvanPria) | Frontend Developer, UI/UX Designer, Documentation |
 | Andi Raif | [@Natthhz](https://github.com/Natthhz) | Backend Developer, AI Developer, Testing |
 
 ## 🛠️ Technologies Used
